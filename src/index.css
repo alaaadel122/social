@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+body{
+ font-family: "Roboto", sans-serif;
+}
+.logo{
+    font-family: "Alex Brush", cursive;
+}
+@theme{
+  --color-purple:#6941C6;
+  --breakpoint-2xl:1400px;
+}
+@layer utilities{
+  .container{
+    margin-inline:auto;
+  }
+}
+.btn{
+  @apply rounded-xl px-4 py-2 cursor-pointer text-white
+}
+.btn-text-purple{
+  @apply text-purple
+}
+.row{
+  @apply flex flex-wrap
+}
+@layer base{
+  h1,h2,h3,h4,h5,h6{
+    @apply font-bold;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.17em;
+  }
+  h3{
+    font-size: 1em;
+  }
+}
