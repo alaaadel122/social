@@ -1,10 +1,10 @@
 import React from 'react'
-import { Oval } from 'react-loader-spinner'
+import { BounceLoader } from "react-spinners";
 
 export default function Loading() {
   return (
     <div className='flex justify-center items-center min-h-screen'>  
-      <Oval
+      <BounceLoader
       visible={true}
       height="80"
       width="80"
