@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './pages/Layout'
-import Register from './pages/register'
+import Register from './pages/Register'
 import Login from './pages/login'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
